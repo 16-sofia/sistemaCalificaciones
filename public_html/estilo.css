@@ -1,0 +1,56 @@
+/* a todos los elementos del documento se le agreaga un tamaño
+de ancho y alto*/
+* {
+    box-sizing: border-box;}/*cada elemento va a incluir padding y borde*/
+
+body { /*Se define el estilo del cuerpo de la página*/
+    font-family: Arial, sans-serif; /*fuente arial o similar*/
+    background-color: #f2f2f2; /*fondo*/
+    margin: 0;/*elimina los espacios por defecto del navegador*/
+    padding: 0;}/*elimina los espacios por defecto del navegador*/
+.contenedor { /*Define el estilo del contenedor principal, 
+              el que contiene al formulario*/
+    width: 450px;/*ancho*/
+    margin: 50px auto;/*margen*/
+    background-color: white;/*fondo blanco*/
+    padding: 30px;
+    border-radius: 10px;/*redondeo de las esquinas*/
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.2);}
+    /*crea el efecto de sombra*/
+h1 { /*alineacion y margen inferior del encabezado*/
+    text-align: center;
+    margin-bottom: 10px;}
+p {/*alineacion y color del parrafo*/
+    text-align: center;
+    color: #666;}
+.formulario {/*convierte el formulario en un contenedor flexible*/
+    display: flex;
+    flex-direction: column;}
+label {/*describe algun capo de formulario*/
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;}/*pone las letras negritas*/
+input {/*define el estilo para los campos de entrada*/
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px; /*redondeo de esquinas*/
+    font-size: 16px;} /*tamaño del texto*/
+button {/*estilos para los botones*/
+    margin-top: 25px;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;}/*cambia el cursor por una mano al pasar
+    sobre el botón*/
+button:hover {/*aplica el estilo cuando el usuario pasa el 
+              mouse sobre el boton*/
+    background-color: #0056b3;}
+.resultado {/*define el estilo para el resultado*/
+    margin-top: 25px;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;/*redondeo de esquinas del cuadro del resultado*/
+    font-size: 18px;}

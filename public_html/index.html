@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Calificaciones</title>
+    <!-- establece la relacion con la hoja de estilo -->
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- agrupa las etiquetas y establece una referencia con el atributo class -->
+    <div class="contenedor">
+        <!-- crea un encabezado -->
+        <h1>Sistema de Calificaciones</h1>
+        <!-- establece un parrafo -->
+        <p>Captura las calificaciones del alumno</p>
+        <!-- agrupa las etiquetas y establece una referencia con el atributo class -->
+        <div class="formulario">
+            <!-- label describe el campo nombre del formulario -->
+            <!-- el atributo for conecta la etiqueta label con el campo id-->
+            <label for="nombre">Nombre del alumno:</label>
+            <!-- se crea una caja donde el usuario puede escribir texto -->
+            <!-- placeholder muestra un texto guía dentro del campo -->
+            <input type="text" id="nombre" placeholder="Escribe el nombre">
+            
+            <!-- label describe el campo edad del formulario -->
+            <!-- el atributo for conecta la etiqueta label con el campo id-->
+            <label for="edad">Edad:</label>
+            <!-- se crea una caja donde el usuario puede escribir texto -->
+            <!-- se limitan los valores permitidos con max y min -->
+            <input type="number" id="edad" min="0" max="10">
+            
+            <!-- label describe el campo calificacion1 del formulario -->
+            <!-- el atributo for conecta la etiqueta label con el campo id-->
+            <label for="calificacion1">Calificación 1:</label>
+            <!-- se crea una caja donde el usuario puede escribir texto -->
+            <!-- se limitan los valores permitidos con max y min -->
+            <input type="number" id="calificacion1" min="0" max="10">
+
+            <!-- label describe el campo calificacion2 del formulario -->
+            <!-- el atributo for conecta la etiqueta label con el campo id-->
+            <label for="calificacion2">Calificación 2:</label>
+            <!-- se crea una caja donde el usuario puede escribir texto -->
+            <!-- se limitan los valores permitidos con max y min -->
+            <input type="number" id="calificacion2" min="0" max="10">
+
+            <!-- label describe el campo calificacion3 del formulario -->
+            <!-- el atributo for conecta la etiqueta label con el campo id-->
+            <label for="calificacion3">Calificación 3:</label>
+            <!-- se crea una caja donde el usuario puede escribir texto -->
+            <!-- se limitan los valores permitidos con max y min -->
+            <input type="number" id="calificacion3" min="0" max="10">
+            
+            <!-- label describe el campo calificacion4 del formulario -->
+            <!-- el atributo for conecta la etiqueta label con el campo id-->
+            <label for="calificacion4">Calificación 4:</label>
+            <!-- se crea una caja donde el usuario puede escribir texto -->
+            <!-- se limitan los valores permitidos con max y min -->
+            <input type="number" id="calificacion4" min="0" max="10">
+
+            <!-- se crea un boton que al seleccionarlo realiza el método calcularPromedio -->
+            <button onclick="calcularPromedio()">
+                Calcular promedio
+            </button>
+            <!-- se crea un boton que al seleccionarlo realiza el método limpiar -->
+            <button onclick="limpiar()">
+                Limpiar
+            </button>
+            <!-- se crea un boton que al seleccionarlo realiza el método agregarAlumno -->
+            <button onclick="agregarAlumno()">
+                Agregar alumno
+            </button>
+            <!-- se cierra el grupo de etiquetas -->
+        </div>
+        <!-- agrupa las etiquetas y establece una referencia con el atributo class -->
+        <div id="resultado" class="resultado">
+        </div>
+    </div>
+    <!-- conecta el archivo HTML con el archivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
